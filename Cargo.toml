@@ -1,0 +1,6 @@
+[package]
+name = "ccache"
+version = "0.1.0"
+authors = ["john spurling <synec@viscous.org>"]
+
+[dependencies]
