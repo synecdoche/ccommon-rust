@@ -22,8 +22,7 @@
 #include <buffer/cc_dbuf.h>
 #include <channel/cc_channel.h>
 #include <channel/cc_pipe.h>
-// TODO: including this breaks codegen
-//#include <channel/cc_tcp.h>
+#include <channel/cc_tcp.h>
 #include <hash/cc_lookup3.h>
 #include <hash/cc_murmur3.h>
 #include <stream/cc_sockio.h>

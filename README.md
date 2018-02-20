@@ -18,5 +18,4 @@ C_INCLUDE_PATH={CCOMMON_SOURCE_DIR}/include:{CCOMMON_SOURCE_DIR}/{CCOMMON_BUILD_
 
 ## TODO
 
-* including `channel/cc_tcp.h` breaks the build.
 * one of the generated layout tests in `bindings.rs` fails. 

@@ -14,9 +14,9 @@ fn main() {
         // The input header we would like to generate
         // bindings for.
         .header("wrapper.h")
-        // TODO: Hitting a bug somewhere in the code/test gen.
         // Skip layout tests for now.
         .layout_tests(false)
+        .blacklist_type("IPPORT_RESERVED")
         // Finish the builder and generate the bindings.
         .generate()
         // Unwrap the Result and panic on failure.
