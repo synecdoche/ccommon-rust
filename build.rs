@@ -17,6 +17,7 @@ fn main() {
         // Skip layout tests for now.
         .layout_tests(false)
         .blacklist_type("IPPORT_RESERVED")
+        .derive_default(true)
         // Finish the builder and generate the bindings.
         .generate()
         // Unwrap the Result and panic on failure.
