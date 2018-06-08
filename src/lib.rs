@@ -16,8 +16,8 @@ mod tests {
     fn ring_array_push_pop() {
         let ring_array = unsafe { ring_array_create(8, 64) };
         assert_ne!(ring_array.is_null(), true);
-        let mut blort = 31337u64;
-        let blort_ptr: *mut c_void = &mut blort as *mut _ as *mut c_void;
+        let blort = 31337u64;
+        let blort_ptr: *const c_void = &blort as *const _ as *const c_void;
         let result = unsafe { ring_array_push(blort_ptr, ring_array) };
         assert_eq!(result, 0);
         let mut popped: u64 = 0;
