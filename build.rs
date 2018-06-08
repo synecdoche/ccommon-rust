@@ -6,7 +6,7 @@ use std::path::PathBuf;
 use std::process::Command;
 
 fn main() {
-    let git_cmd_output = Command::new("git")
+    let _git_cmd_output = Command::new("git")
         .args(&["clone", "https://github.com/twitter/ccommon.git"])
         .output().unwrap();
 
